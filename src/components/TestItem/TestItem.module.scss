@@ -1,0 +1,42 @@
+.TestItem {
+    display: grid;
+    grid-template: 1fr / 3fr 1fr 1fr 1.5fr 1fr ;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px;
+    background-color: $item-bkg-color;
+    border-radius: 3px;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: 4px solid;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0 0 20px #00000015;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    td {
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        color: $primary-text-color;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .type,
+    .status {
+        text-transform: capitalize;
+    }
+
+    .name {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
